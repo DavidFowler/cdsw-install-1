@@ -27,9 +27,6 @@ Get these IDs:
 
 - Go to the Azure Marketplace and search for `Cloudera Director`, then start the wizard.
 - Complete the wizard; example values are below. 
-- Finish the wizard and wait until deployment is completed. 
-- Go to the RG, and on both NSGs, add inbound security rule to open ports 80,7180-7189,8888.
-- Go to the RG, and `Convert to managed` each Availability Set.
 - At the end of the wizard, you will see a summary just like the below example. Save it for later reference.
 
 ### EXAMPLE PARAMETERS FOR CLOUDERA DIRECTOR WIZARD
@@ -56,6 +53,10 @@ Azure Active Directory Client Secret: ******************************************
 Cloudera Director Admin Username: director
 Cloudera Director Admin User Password: *************
 ```
+
+- Once the Director and associated network deployment is completed. 
+- Go to the RG, and on both NSGs, add inbound security rule to open ports 80,7180-7189,8888.
+- Go to the RG, and `Convert to managed` each Availability Set.
 
 ### STEPS TO CREATE CDSW DEPLOYMENT
 
